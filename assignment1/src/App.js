@@ -19,9 +19,9 @@ function App() {
   }]
   
     return (
-<div>
-  <Expenses item={expenses}></Expenses>
-</div>
+      <div>
+        <Expenses item={expenses}></Expenses>
+      </div>
     )
   }
   
