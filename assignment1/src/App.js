@@ -1,28 +1,27 @@
-import ExpenseItem from './components/ExpenseItem';
-import './App.css';
+import Expenses from './components/Expenses';
 
 function App() {
   const expenses = [{
     id: 1,
-    book: "Harry Potter and the Philosopher's Stone",
-    author: "J.K. Rowling",
+    title: 'Notebook',
+    amount: 27.7,
+    date: new Date(2022,7,27),
   },{
     id: 2,
-    book: "The Alchemist",
-    author: "Paulo Coelho",
+    title: 'Pen',
+    amount: 30.9,
+    date: new Date(2022,9,26),
   },{
     id: 3,
-    book: 'And Then There Were None',
-    author: "Agatha Christie",
+    title: 'Book',
+    amount: 99.7,
+    date: new Date(2022,8,22),
   }]
   
     return (
-      <div className='app'>
-       <h1 classname ="title">NhungNhung Book Store</h1>
-       <ExpenseItem book = {expenses[0].book} author = {expenses[0].author} ></ExpenseItem>
-       <ExpenseItem book = {expenses[1].book} author = {expenses[1].author} ></ExpenseItem>
-       <ExpenseItem book = {expenses[2].book} author = {expenses[2].author} ></ExpenseItem>
-      </div>
+<div>
+  <Expenses item={expenses}></Expenses>
+</div>
     )
   }
   
